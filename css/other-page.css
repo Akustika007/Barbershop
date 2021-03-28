@@ -1,0 +1,356 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'PT Sans Narrow', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+
+    background-color: #ffffff;
+    background-image: url("../images/pattern-light.jpg");
+    background-position: top center;
+    background-repeat: repeat;
+}
+
+
+html,
+body {
+    min-width: 1122px;
+    min-height: 1750px;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+/*-------- buttons and link's ----------*/
+
+.button {
+    display: inline-block;
+    padding: 10px 30px;
+    margin-right: 16px;
+
+    font: inherit;
+    text-align: center;
+    color: #ffffff;
+    vertical-align: middle;
+    text-transform: uppercase;
+    transition: 0.3s;
+
+    background-color: #000000;
+    border: none;
+}
+
+.button:hover,
+.button:active,
+.button:focus {
+    background-color: #663d15;
+}
+
+a.button:disabled,
+.button:disabled {
+    cursor: default;
+    opacity: 0.5;
+    background-color: #000000;
+}
+
+.footer-copyright .button {
+    display: block;
+    margin-right: 0;
+}
+
+.footer-copyright .button:hover,
+.footer-copyright .button:focus {
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
+.social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 43px;
+    height: 43px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    transition: 0.3s;
+
+    background-color: #000000;
+}
+
+.social-button:hover,
+.social-button:focus {
+    background-color: #ffffff;
+}
+
+.social-button:hover path,
+.social-button:focus path {
+    transition: 0.3s;
+    fill: #000000;
+}
+
+/* ------------ Header navigation -------------- */
+
+.other-header {
+    margin-bottom: 60px;
+}
+
+.other-navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+
+}
+
+.other-navigation-wrapper {
+    width: 100%;
+    min-height: 70px;
+    background-color: #000000;
+}
+
+.other-navigation-wrapper .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-navigation {
+    display: flex;
+    flex-wrap: wrap;
+
+
+    width: 700px;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.user-navigation {
+    display: flex;
+    width: 140px;
+    margin: 0;
+    padding: 0;
+}
+
+.user-navigation .login-link {
+    position: relative;
+    padding-left: 50px;
+}
+
+.site-navigation,
+.user-navigation {
+    list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+    color: #ffffff;
+    transition: 0.3s;
+
+    display: block;
+    padding: 25px 20px;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+    background-color: #242424;
+}
+
+.other-header-logo:hover path,
+.other-header-logo:focus path{
+    fill: #838080;
+    transition: 0.3s;
+}
+
+.logo-item a {
+    padding-top: 23px;
+    padding-bottom: 18px;
+}
+
+.logo-item a:hover,
+.logo-item a:focus {
+    background-color: #000000;
+}
+
+.login-link::before {
+    content: "";
+
+    position: absolute;
+    top: 27px;
+    left: 24px;
+
+    width: 16px;
+    height: 18px;
+    background-image: url("../images/login.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    opacity: 0.3;
+}
+
+.login-link:hover::before,
+.login-link:focus::before,
+.login-link:active::before {
+    transition: 0.3s;
+    opacity: 1;
+}
+
+.current-page {
+    padding-bottom: 22px;
+    border-bottom: 4px solid white;
+}
+
+/*---------- Breadcrumbs-navigation  ----------- */
+
+.breadcrumbs-navigation ul {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.breadcrumbs-navigation li {
+    position: relative;
+    margin-right: 12px;
+}
+
+.breadcrumbs-navigation li:not(:last-of-type)::after {
+    content: "";
+
+    position: absolute;
+    right: -10px;
+    top: 8px;
+
+    width: 8px;
+    height: 8px;
+
+    background-color: #000000;
+
+    transform: rotate(45deg);
+}
+
+.breadcrumbs-item:last-of-type a {
+    color: #aba9a7;
+}
+
+.breadcrumbs-navigation a  {
+    padding: 0 18px;
+}
+
+.breadcrumbs-item:first-of-type a {
+    padding-left: 0;
+}
+
+.breadcrumbs-item a{
+    color: #000000;
+}
+
+/* ------------ Footer --------------- */
+
+.other-footer {
+    color: #ffffff;
+
+    /* background-color: #212121; */
+    background-image: url("../images/pattern-dark.jpg");
+    background-position: 0 0;
+    background-repeat: repeat;
+
+    padding-top: 60px;
+    padding-bottom: 40px;
+    margin-top: 65px;
+    box-shadow: inset 0px 20px 10px 0px rgba(0,0,0,0.5);
+}
+
+.other-footer .container {
+    display: flex;
+}
+
+.footer-contacts {
+    width: 320px;
+    margin: 0;
+    margin-right: 80px;
+}
+
+.footer-contacts a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.footer-contacts a:hover,
+.footer-contacts a:focus {
+    text-decoration: none;
+}
+
+.footer-social {
+    width: 145px;
+    text-align: center;
+}
+
+.footer-social ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 141px;
+    margin: 0 auto;
+    padding: 0;
+
+    list-style: none;
+}
+
+.footer-social b {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.footer-copyright {
+    width: 150px;
+    margin: 0;
+    margin-left: auto;
+
+    text-align: center;
+}
+
+.footer-copyright b {
+    display: block;
+    margin-bottom: 15px;
+}
+

@@ -1,0 +1,136 @@
+html,
+body {
+    min-width: 1122px;
+    min-height: 1100px;
+}
+
+h1 {
+    font-size: 30px;
+    line-height: 42px;
+}
+
+h3 {
+    margin: 0;
+    margin-bottom: 35px;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.slogan {
+    display: flex;
+    align-items: center;
+
+    margin-top: 55px;
+    margin-bottom: 65px;
+
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+}
+
+.slogan::before,
+.slogan::after {
+    content: "";
+
+    flex-grow: 1;
+    flex-shrink: 0;
+
+    width: 50px;
+    height: 2px;
+
+    background: #000000;
+}
+
+.price {
+    width: 460px;
+}
+
+.price-table {
+    width: 460px;
+    height: 125px;
+    border: 2px solid #000000;
+    border-collapse: collapse;
+}
+
+.price-table th, td {
+    border: 2px solid #000000;
+}
+
+.price-table th {
+    text-align: left;
+    padding-left: 15px;
+    width: 230px;
+}
+
+.price-table td {
+    text-align: center;
+    width: 230px;
+}
+
+.facilities {
+    width: 400px;
+}
+
+.facilities ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.facilities li {
+    position: relative;
+    margin: 7px 0;
+    margin-left: 20px;
+}
+
+.facilities li:first-of-type {
+    padding-top: 0;
+}
+
+.facilities li:last-of-type {
+    padding-bottom: 0;
+}
+
+.facilities li::before {
+    content: "";
+
+    position: absolute;
+    left: -17px;
+    top: 9px;
+
+    width: 7px;
+    height: 7px;
+
+    background-color: #000000;
+
+    transform: rotate(45deg);
+}
+
+.facilities-price-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-us {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.about-us p {
+    margin: 0;
+}
+
+.about-us .first-block-about-us {
+    width: 400px;
+}
+
+.second-block-about-us-wrapper {
+    display: flex;
+    align-items: flex-end;
+    width: 460px;
+}
+
+.second-block-about-us-wrapper .second-block-about-us {
+    width: 400px;
+}

@@ -1,0 +1,115 @@
+html,
+body {
+    min-width: 1122px;
+    min-height: 1150px;
+}
+
+main h1 {
+    font-size: 30px;
+    line-height: 42px;
+    margin-left: 10px;
+}
+
+main h2 {
+    font: 24px;
+    line-height: 30px;
+}
+
+.breadcrumbs-navigation {
+    margin-left: 10px;
+}
+
+/*---------- Images section  ----------- */
+
+.item-images {
+    width: 460px;
+}
+
+.item-images img {
+    box-shadow: 0 0 13px rgba(0,0,0,0.5);
+}
+
+.img-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*---------- Description section  ----------- */
+
+.item-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.description-wrapper {
+    width: 400px;
+
+    margin-top: 20px;
+}
+
+.status-articul-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.articul {
+    color: #aba9a7;
+}
+
+.buy-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e5e5e5;
+    width: 190px;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 65px;
+}
+
+.buy-block span {
+    width: 110px;
+    text-align: center;
+    align-self: center;
+}
+
+.buy-block .button {
+    padding: 0;
+    margin: 0;
+    width: 80px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.inside-list{
+    padding: 0;
+    list-style: none;
+}
+
+.inside-list li {
+    position: relative;
+    margin-left: 20px;
+}
+
+.inside-list li::before {
+    content: "";
+
+    position: absolute;
+    left: -17px;
+    top: 9px;
+
+    width: 7px;
+    height: 7px;
+
+    background-color: #000000;
+
+    transform: rotate(45deg);
+}
+
+.other-footer {
+    margin-top: 50px;
+}
